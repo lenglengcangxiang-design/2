@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻导报</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E40AF',
+                        light: '#EFF6FF'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { font-family: 'Noto Sans SC', system-ui, sans-serif; }
+        .card { border-radius: 16px; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-3px); }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- 导航 -->
+    <nav class="fixed top-0 w-full bg-white shadow-sm z-50 py-4">
+        <div class="max-w-5xl mx-auto px-6 flex items-center">
+            <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                <span class="text-white font-bold">新</span>
+            </div>
+            <span class="text-xl font-bold text-gray-800">新闻导报</span>
+        </div>
+    </nav>
+
+    <!-- 首页 -->
+    <section class="pt-24 pb-12 bg-primary">
+        <div class="max-w-5xl mx-auto px-6 text-center py-16">
+            <h1 class="text-5xl font-bold text-white mb-4">新闻导报</h1>
+            <p class="text-blue-100 mb-8">天津师范大学新闻传播学院</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
+                <div class="bg-white/10 card p-5 text-white">
+                    <div class="text-2xl font-bold">356</div>
+                    <div class="text-blue-200 text-xs">篇作品</div>
+                </div>
+                <div class="bg-white/10 card p-5 text-white">
+                    <div class="text-2xl font-bold">1518</div>
+                    <div class="text-blue-200 text-xs">名粉丝</div>
+                </div>
+                <div class="bg-white/10 card p-5 text-white">
+                    <div class="text-2xl font-bold">51</div>
+                    <div class="text-blue-200 text-xs">人团队</div>
+                </div>
+                <div class="bg-white/10 card p-5 text-white">
+                    <div class="text-2xl font-bold">20</div>
+                    <div class="text-blue-200 text-xs">年历史</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模块1 -->
+    <section class="py-12">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xl font-bold text-gray-800 mb-2">一、校园媒体基本情况</h2>
+            <div class="w-16 h-1 bg-primary mb-6"></div>
+            <div class="bg-light card p-6">
+                <p class="text-gray-600 mb-6">新闻导报是天津师范大学新闻传播学院下属学生校园媒体社团，以"<strong class="text-primary">守正创新</strong>"为核心理念，全校唯一坚持传统报纸发行的校园媒体。</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div class="bg-white card p-4 text-center text-sm">
+                        <i class="fa fa-trophy text-primary mb-2"></i><br>院级先进集体
+                    </div>
+                    <div class="bg-white card p-4 text-center text-sm">
+                        <i class="fa fa-newspaper-o text-primary mb-2"></i><br>全校唯一纸媒
+                    </div>
+                    <div class="bg-white card p-4 text-center text-sm">
+                        <i class="fa fa-users text-primary mb-2"></i><br>51人专业团队
+                    </div>
+                    <div class="bg-white card p-4 text-center text-sm">
+                        <i class="fa fa-graduation-cap text-primary mb-2"></i><br>专业实践基地
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模块2 -->
+    <section class="py-12 bg-light">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xl font-bold text-gray-800 mb-2">二、组织架构</h2>
+            <div class="w-16 h-1 bg-primary mb-6"></div>
+            <div class="text-center mb-6">
+                <div class="inline-block bg-primary text-white px-6 py-2 card">
+                    <span class="font-bold">总编室</span>
+                    <span class="text-blue-200 text-xs ml-2">整体统筹</span>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-4 gap-4">
+                <div class="bg-white card p-5 text-center">
+                    <i class="fa fa-pencil text-primary text-xl mb-2"></i>
+                    <h3 class="font-bold text-sm">采编部</h3>
+                    <p class="text-gray-500 text-xs mt-2">新闻采写、报纸编辑</p>
+                </div>
+                <div class="bg-white card p-5 text-center">
+                    <i class="fa fa-paint-brush text-primary text-xl mb-2"></i>
+                    <h3 class="font-bold text-sm">美编部</h3>
+                    <p class="text-gray-500 text-xs mt-2">视觉设计、海报</p>
+                </div>
+                <div class="bg-white card p-5 text-center">
+                    <i class="fa fa-headphones text-primary text-xl mb-2"></i>
+                    <h3 class="font-bold text-sm">灰犀牛电台</h3>
+                    <p class="text-gray-500 text-xs mt-2">音频节目、评论</p>
+                </div>
+                <div class="bg-white card p-5 text-center">
+                    <i class="fa fa-cogs text-primary text-xl mb-2"></i>
+                    <h3 class="font-bold text-sm">社务部</h3>
+                    <p class="text-gray-500 text-xs mt-2">后勤、活动</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模块3 -->
+    <section class="py-12">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xl font-bold text-gray-800 mb-2">三、日常工作概况</h2>
+            <div class="w-16 h-1 bg-primary mb-6"></div>
+            <div class="bg-primary card p-6 mb-6 text-white">
+                <h3 class="text-center font-bold mb-4">年度数据总览</h3>
+                <div class="grid grid-cols-3 gap-4 text-center max-w-3xl mx-auto">
+                    <div><div class="text-xl font-bold">100+篇</div><div class="text-blue-200 text-xs">公众号作品</div></div>
+                    <div><div class="text-xl font-bold">2期</div><div class="text-blue-200 text-xs">报纸发行</div></div>
+                    <div><div class="text-xl font-bold">26期</div><div class="text-blue-200 text-xs">电台节目</div></div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-light card p-5"><span class="font-bold text-primary">采编部：</span><span class="text-gray-600 text-sm">深度报道、报纸出版、导报快讯、校友采访</span></div>
+                <div class="bg-light card p-5"><span class="font-bold text-primary">美编部：</span><span class="text-gray-600 text-sm">封面设计、节日海报、品牌视觉</span></div>
+                <div class="bg-light card p-5"><span class="font-bold text-primary">电台：</span><span class="text-gray-600 text-sm">新闻评论、社会热点、青年议题</span></div>
+                <div class="bg-light card p-5"><span class="font-bold text-primary">社务部：</span><span class="text-gray-600 text-sm">纳新、换届、团建、制度建设</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模块4 -->
+    <section class="py-12 bg-light">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xl font-bold text-gray-800 mb-2">四、融媒体矩阵建设</h2>
+            <div class="w-16 h-1 bg-primary mb-6"></div>
+            <div class="text-center mb-6">
+                <div class="inline-flex items-center bg-white card px-6 py-3 shadow">
+                    <i class="fa fa-wechat text-primary text-xl mr-3"></i>
+                    <div class="text-left"><div class="font-bold">动静FOCUS</div><div class="text-gray-500 text-xs">微信公众号</div></div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                <div class="bg-white card p-4 text-center text-sm"><i class="fa fa-file-text-o text-primary mb-2"></i><br>采写动静</div>
+                <div class="bg-white card p-4 text-center text-sm"><i class="fa fa-headphones text-primary mb-2"></i><br>灰犀牛电台</div>
+                <div class="bg-white card p-4 text-center text-sm"><i class="fa fa-paint-brush text-primary mb-2"></i><br>创意美编</div>
+                <div class="bg-white card p-4 text-center text-sm"><i class="fa fa-camera text-primary mb-2"></i><br>摄影定格</div>
+                <div class="bg-white card p-4 text-center text-sm"><i class="fa fa-bar-chart text-primary mb-2"></i><br>动静data</div>
+                <div class="bg-white card p-4 text-center text-sm"><i class="fa fa-birthday-cake text-primary mb-2"></i><br>贺20周年</div>
+                <div class="bg-white card p-4 text-center text-sm"><i class="fa fa-newspaper-o text-primary mb-2"></i><br>电子报纸</div>
+                <div class="bg-white card p-4 text-center text-sm"><i class="fa fa-magic text-primary mb-2"></i><br>H5创艺坊</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模块5 -->
+    <section class="py-12">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xl font-bold text-gray-800 mb-2">五、特色专栏</h2>
+            <div class="w-16 h-1 bg-primary mb-6"></div>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-light card p-5"><h3 class="font-bold text-primary mb-2">导报快讯</h3><p class="text-gray-600 text-sm">短消息栏目，兼具资讯发布与基本功训练</p></div>
+                <div class="bg-light card p-5"><h3 class="font-bold text-primary mb-2">动静data</h3><p class="text-gray-600 text-sm">数据新闻阵地，配套课程教学成果展示</p></div>
+                <div class="bg-light card p-5"><h3 class="font-bold text-primary mb-2">动静创意坊</h3><p class="text-gray-600 text-sm">AI作品、H5互动等新媒体前沿探索</p></div>
+                <div class="bg-light card p-5"><h3 class="font-bold text-primary mb-2">优秀校友采访</h3><p class="text-gray-600 text-sm">对话行业精英，为在校生提供职业范本</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模块6 -->
+    <section class="py-12 bg-light">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xl font-bold text-gray-800 mb-2">六、特色活动</h2>
+            <div class="w-16 h-1 bg-primary mb-6"></div>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-white card p-5">
+                    <span class="font-bold text-primary">📚 专业成长</span>
+                    <ul class="text-gray-600 text-xs mt-2 space-y-1">
+                        <li>• 海河融媒中心参访</li>
+                        <li>• 数据新闻大赛报道</li>
+                        <li>• 数字编辑创新大赛</li>
+                    </ul>
+                </div>
+                <div class="bg-white card p-5">
+                    <span class="font-bold text-primary">🎓 校园服务</span>
+                    <ul class="text-gray-600 text-xs mt-2 space-y-1">
+                        <li>• 校园开放日记录</li>
+                        <li>• 校友返校日报道</li>
+                        <li>• "汉语桥"专项报道</li>
+                        <li>• "i新传"品牌设计</li>
+                    </ul>
+                </div>
+                <div class="bg-white card p-5">
+                    <span class="font-bold text-primary">🏆 赛事竞技</span>
+                    <ul class="text-gray-600 text-xs mt-2 space-y-1">
+                        <li>• 中国数据新闻大赛</li>
+                        <li>• 数字编辑创新大赛</li>
+                        <li>• AIGC应用大赛</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模块7 -->
+    <section class="py-12">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xl font-bold text-gray-800 mb-2">七、典型报道案例</h2>
+            <div class="w-16 h-1 bg-primary mb-6"></div>
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-primary card p-5 text-white">
+                    <div class="flex justify-between"><span class="font-bold">《麦门与疯四》</span><span class="font-bold">1.1万+</span></div>
+                    <p class="text-blue-200 text-sm mt-2">视频作品，刷新年度传播纪录</p>
+                </div>
+                <div class="bg-primary card p-5 text-white">
+                    <div class="flex justify-between"><span class="font-bold">"汉语桥"报道</span><span class="font-bold">11+1</span></div>
+                    <p class="text-blue-200 text-sm mt-2">11支视频+1篇图文，官方录用</p>
+                </div>
+            </div>
+            <div class="bg-light card p-5">
+                <div class="flex justify-between"><span class="font-bold">《国际盲人节特辑》</span><span class="text-primary font-bold">3部门联动</span></div>
+                <p class="text-gray-600 text-sm mt-2">采编+美编+电台三方合作，融媒体协同典范</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="py-8 bg-primary text-white text-center">
+        <h3 class="text-lg font-bold">新闻导报</h3>
+        <p class="text-blue-200 text-sm mt-2">天津师范大学新闻传播学院</p>
+    </footer>
+
+</body>
+</html>
